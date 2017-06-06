@@ -16,6 +16,12 @@ It does not expose 3306 port but using "docker link" to connect with RESTful bac
   $ docker build -t db-server .
   ```
 
+* Run docker container
+
+  ```shell
+  $ docker run -d --name db db-server
+  ```
+
 ## Model
 
 
