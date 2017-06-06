@@ -1,5 +1,6 @@
 
-mysql -u root << EOF
+service mysql start
+mysql << EOF
 CREATE DATABASE movie;
 use movie
 source init_data.sql
@@ -8,3 +9,4 @@ GRANT ALL ON movie.* TO 'movie_database'@'localhost';
 EOF
 service mysql restart
 tail -f /var/log/mysql/error.log
+
