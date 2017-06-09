@@ -33,8 +33,6 @@ It does not expose 3306 port but using "docker link" to connect with RESTful bac
 
 ## Model
 
-
-
 # Reference
 
 https://github.com/AwesomeTickets/DatabaseServer
