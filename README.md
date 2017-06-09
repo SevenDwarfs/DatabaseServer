@@ -27,7 +27,7 @@ It does not expose 3306 port but using "docker link" to connect with RESTful bac
   ```shell
   docker rm restful-server
   docker rmi kinpzz/restful-server
-  docker build -t kinpzz/restful-server ../docker-jenkins-test
+  docker build -t kinpzz/restful-server ../WebService
   docker run -d -p 127.0.0.1:8082:8082 --name restful-server --link db:db-server kinpzz/restful-server
   ```
 
